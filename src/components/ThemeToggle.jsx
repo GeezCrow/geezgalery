@@ -1,42 +1,51 @@
 // src/components/ThemeToggle.jsx
 import { useTheme } from '../context/ThemeContext';
-import { useState } from 'react';
 
 export default function ThemeToggle() {
   const { isDark, toggleTheme } = useTheme();
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleClick = (e) => {
-    e.stopPropagation(); // Evita que el evento burbujee
-    toggleTheme();
-  };
 
   return (
-    <button
-      onClick={handleClick}
-      onTouchStart={handleClick} // Para móviles
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      style={{
-        background: isHovered ? 'var(--border-light)' : 'none',
-        border: '1px solid var(--border-light)',
-        color: isHovered ? 'var(--bg-secondary)' : 'var(--text-primary)',
-        padding: '4px 12px',
-        cursor: 'pointer',
-        fontFamily: "'Share Tech Mono', monospace",
-        fontSize: '10px',
-        letterSpacing: '2px',
-        textTransform: 'uppercase',
-        transition: 'all 0.3s ease',
-        display: 'flex',
-        alignItems: 'center',
-        gap: '6px',
-        WebkitTapHighlightColor: 'transparent', // Quita el highlight en móviles
-        touchAction: 'manipulation', // Mejora el rendimiento táctil
-      }}
-    >
-      <span>{isDark ? '🌙' : '☀️'}</span>
-      <span>{isDark ? 'DARK' : 'LIGHT'}</span>
-    </button>
+    <div style={{
+      display: 'inline-block',
+      flexShrink: 0,
+    }}>
+      <label
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '4px',
+          border: '1px solid var(--border-light)',
+          padding: '4px 10px',
+          cursor: 'pointer',
+          fontFamily: "'Share Tech Mono', monospace",
+          fontSize: '9px',
+          letterSpacing: '1.5px',
+          textTransform: 'uppercase',
+          color: 'var(--text-primary)',
+          transition: 'all 0.3s ease',
+          WebkitTapHighlightColor: 'transparent',
+          touchAction: 'manipulation',
+          minHeight: '28px',
+          minWidth: '60px',
+          userSelect: 'none',
+          WebkitUserSelect: 'none',
+          background: 'var(--bg-card)',
+          border: '1px solid var(--border-light)',
+          borderRadius: '3px',
+          position: 'relative',
+          whiteSpace: 'nowrap',
+        }}
+      >
+        <input
+          type="checkbox"
+          checked={isDark}
+          onChange={toggleTheme}
+          style={{ display: 'none' }}
+        />
+        <span style={{ fontSize: '14px', lineHeight: 1 }}>{isDark ? '🌙' : '☀️'}</span>
+        <span style={{ lineHeight: 1 }}>{isDark ? 'DARK' : 'LIGHT'}</span>
+      </label>
+    </div>
   );
 }
