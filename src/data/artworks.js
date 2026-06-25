@@ -8,7 +8,7 @@ export const artworks = [
   { 
     image: demongirl,   // full para lightbox
     thumb: demongirlThumb,
-    title: 'Demon Girl',
+    title: 'Succubus Girl',
     tag: '// digital',
     featured: true,
     isNew: true,
@@ -17,15 +17,15 @@ export const artworks = [
     id: 2,
     image: dtiysFull,
     thumb: dtiysThumb,
-    title: 'DTIYS',
-    tag: '// fanart',
+    title: 'DTIYS Knives',
+    tag: '// oc',
     featured: true,
     isNew: true,
   },
   { 
     id: 3, 
     image: lisandro, 
-    title: 'Knives', 
+    title: 'Lysandro (My Sugar Love)', 
     tag: '// fanart',
     featured: true, 
     isNew: true 

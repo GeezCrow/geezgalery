@@ -12,7 +12,7 @@ import library from '../assets/library.webp';
 export const gallery2 = [
   { 
     image: bikinigirl,   // full para lightbox  // thumb para cards
-    title: 'Sexy',
+    title: 'Bikini Girl 3 Shots',
     tag: '// digital',
     isNew: true,
     colSpan: 2,   // ← ocupa 2 columnas de ancho
@@ -21,8 +21,8 @@ export const gallery2 = [
   { 
     id: 2,
     image: girlstreet,
-    title: 'DTIYS',
-    tag: '// fanart',
+    title: 'Street Girl',
+    tag: '// oc',
     isNew: true,
     colSpan: 1,   // ← ocupa 2 columnas de ancho
     rowSpan: 3,   // ← ocupa 2 filas de alto (pieza destacada)
@@ -30,8 +30,8 @@ export const gallery2 = [
   { 
     id: 3, 
     image: girlguitar, 
-    title: 'Knives', 
-    tag: '// fanart',
+    title: 'Guitar Girl', 
+    tag: '// oc',
     featured: true, 
     isNew: true,
     colSpan: 2,   // ← ocupa 2 columnas de ancho
@@ -40,7 +40,7 @@ export const gallery2 = [
     { 
     id: 4, 
     image: portrait, 
-    title: 'Library', 
+    title: 'Portrait Blonde Girl', 
     tag: '// fanart',
     isNew: true,
         colSpan: 1,   // ← ocupa 2 columnas de ancho
@@ -49,8 +49,8 @@ export const gallery2 = [
     { 
     id:9,
     image: demongirlFull,   // full para lightbox
-    title: 'Demon Girl',
-    tag: '// digital',
+    title: 'Succubus Girl',
+    tag: '// oc',
     featured: true,
     isNew: true,
         colSpan: 1,   // ← ocupa 2 columnas de ancho
@@ -60,8 +60,8 @@ export const gallery2 = [
     id: 5,
     image: dtiysFull,
     thumb: dtiysThumb,
-    title: 'DTIYS',
-    tag: '// fanart',
+    title: 'DTIYS Knives',
+    tag: '// oc',
     featured: true,
     isNew: true,
     colSpan: 1,   // ← ocupa 2 columnas de ancho
@@ -70,8 +70,8 @@ export const gallery2 = [
       { 
     id: 7, 
     image: knives, 
-    title: 'Library', 
-    tag: '// fanart',
+    title: 'Knives Classroom', 
+    tag: '// oc',
     isNew: true,
         colSpan: 1.5,   // ← ocupa 2 columnas de ancho
     rowSpan: 3,   // ← ocupa 2 filas de alto (pieza destacada)
@@ -79,7 +79,7 @@ export const gallery2 = [
   { 
     id: 6, 
     image: lisandro, 
-    title: 'Knives', 
+    title: 'Lysandro (My Sugar Love)', 
     tag: '// fanart',
     featured: true, 
     isNew: true,
